@@ -1,20 +1,13 @@
-function playAudioLeft() {
-    const audio = document.getElementById("audioPlayerLeft");
-    audio.play();
-}
-function playAudioRight() {
-    const audio = document.getElementById("audioPlayerRight");
-    audio.play();
-}
-function playAudioStereoWithMono(){
-    const audio = document.getElementById("audioPlayerStereoWithMono");
-    audio.play();
-}
-function playAudioTwoSides(){
-    const audio = document.getElementById("audioPlayerTwoSides");
-    audio.play();
-}
-function playAudioMono(){
-    const audio = document.getElementById("audioPlayerMono");
+function playAudio(audioId) {
+    const allAudios = document.querySelectorAll("audio");
+    allAudios.forEach(audio => {
+        if (!audio.paused) {
+            audio.pause();
+            audio.currentTime = 0; // Reinicia o áudio
+        }
+    });
+
+    // Reproduz o áudio solicitado
+    const audio = document.getElementById(audioId);
     audio.play();
 }
