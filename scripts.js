@@ -14,3 +14,7 @@ function playAudioTwoSides(){
     const audio = document.getElementById("audioPlayerTwoSides");
     audio.play();
 }
+function playAudioMono(){
+    const audio = document.getElementById("audioPlayerMono");
+    audio.play();
+}
