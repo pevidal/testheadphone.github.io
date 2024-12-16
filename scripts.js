@@ -6,3 +6,11 @@ function playAudioRight() {
     const audio = document.getElementById("audioPlayerRight");
     audio.play();
 }
+function playAudioStereoWithMono(){
+    const audio = document.getElementById("audioPlayerStereoWithMono");
+    audio.play();
+}
+function playAudioTwoSides(){
+    const audio = document.getElementById("audioPlayerTwoSides");
+    audio.play();
+}
