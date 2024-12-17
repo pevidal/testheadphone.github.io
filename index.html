@@ -56,16 +56,16 @@
                 </div>
             </div>
             
-            <div class="row justify-content-center align-items-center mt-3 ms-5 text-center">
-              <div class="col-auto">
-                <button type="button" class="btn btn-secondary" onclick="playAudio('audioPlayerTwoSides')" style="margin-right: 5px;">
+            <div class="row justify-content-center align-items-center mt-3 text-center">
+              <div class="col-12 col-sm-auto mb-2 mb-sm-0">
+                <button type="button" class="btn btn-secondary" onclick="playAudio('audioPlayerStereoWithMono')">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
                     <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"></path>
                   </svg>
-                  Two Sides
+                  Stereo + Mono
                 </button>
               </div>
-              <div class="col-auto">
+              <div class="col-12 col-sm-auto mb-2 mb-sm-0 align-items-center ">
                 <button type="button" class="btn btn-secondary" onclick="playAudio('audioPlayerMono')" style="margin-right: 5px;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
                     <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"></path>
@@ -73,13 +73,20 @@
                   Mono
                 </button>
               </div>
-              
-              <div class="col-auto">
-                <button type="button" class="btn btn-secondary" onclick="playAudio('audioPlayerStereoWithMono')">
+              <div class="col-12 col-sm-auto">
+                
+                <button type="button" class="btn btn-secondary " onclick="playAudio('audioPlayerTwoSides')" >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
                     <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"></path>
                   </svg>
-                  Stereo + Mono
+                  Two Sides
+                </button>
+                <button type="button" class="btn btn-link text-danger p-0 ms-0" tabindex="0" 
+                data-bs-toggle="popover" data-bs-trigger="focus" title="Two Sides" 
+                data-bs-content="Not listening anything? Then you sound system is mono">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                </svg>
                 </button>
               </div>
             </div>
