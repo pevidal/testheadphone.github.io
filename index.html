@@ -56,40 +56,34 @@
                 </div>
             </div>
             
-                <div class="row mt-3">
-                    <div class="col text-center ">
-                      <button type="button" class=" btn btn-secondary" onclick="playAudio('audioPlayerMono')">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"></path>
-                          </svg>
-                          Mono   
-                      </button>
-                    </div>
-                   
-                  </div>
-                  <div class="row mt-3" >
-                    <div class="col text-center ">
-                      <button type="button" class="  btn btn-secondary" onclick="playAudio('audioPlayerTwoSides')">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"></path>
-                          </svg>
-                          Two Sides    
-                      </button>
-                    </div>
-                  </div>
-                <div class="row mt-3">
-                  <div class="col text-center">
-                    <button type="button" class="  btn btn-secondary" onclick="playAudio('audioPlayerStereoWithMono')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"></path>
-                        </svg>
-                        Stereo + Mono   
-                    </button>
-                  </div>
-                </div>
-                
+            <div class="row justify-content-center align-items-center mt-3 ms-5 text-center">
+              <div class="col-auto">
+                <button type="button" class="btn btn-secondary" onclick="playAudio('audioPlayerTwoSides')" style="margin-right: 5px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"></path>
+                  </svg>
+                  Two Sides
+                </button>
+              </div>
+              <div class="col-auto">
+                <button type="button" class="btn btn-secondary" onclick="playAudio('audioPlayerMono')" style="margin-right: 5px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"></path>
+                  </svg>
+                  Mono
+                </button>
+              </div>
               
-          </div>
+              <div class="col-auto">
+                <button type="button" class="btn btn-secondary" onclick="playAudio('audioPlayerStereoWithMono')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"></path>
+                  </svg>
+                  Stereo + Mono
+                </button>
+              </div>
+            </div>
+            
     </main>
 </body>
 <audio id="audioPlayerLeft" src="Left.mp3"></audio>
