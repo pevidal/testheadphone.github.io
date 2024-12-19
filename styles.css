@@ -23,3 +23,45 @@ img{
     }
   }
 
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+h1 {
+    text-align: center;
+    
+}
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.section h2 {
+    color: #2196F3;
+}
+.section p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.comparison-table th, .comparison-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.comparison-table th {
+    background-color: #505050;
+    color: white;
+}
+.comparison-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
