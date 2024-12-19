@@ -5,3 +5,17 @@
 .navbar-brand{
     font-family: 'Lexend'
 }
+.logo{
+    max-width: 60%;
+    height: auto;
+}
+img{
+    max-width: 40%;
+}
+@media (max-width: 570px) {
+    img {
+      max-width: auto; /* Define um tamanho máximo para telas pequenas */
+      margin: 0 auto; /* Centraliza a imagem */
+      display: block; /* Garante o comportamento responsivo */
+    }
+  }
