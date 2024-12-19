@@ -12,6 +12,9 @@
 img{
     max-width: 40%;
 }
+.small-text {
+    font-size: 10px; /* Tamanho ajustado da fonte */
+  }
 @media (max-width: 570px) {
     img {
       max-width: auto; /* Define um tamanho máximo para telas pequenas */
@@ -19,3 +22,4 @@ img{
       display: block; /* Garante o comportamento responsivo */
     }
   }
+
