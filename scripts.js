@@ -13,8 +13,29 @@ function playAudio(audioId) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    // Inicialização dos popovers do Bootstrap
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-      return new bootstrap.Popover(popoverTriggerEl)
-    })
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+  
+    // Pop-up de cookies
+    const cookiePopup = document.getElementById("cookiePopup");
+    const acceptCookies = document.getElementById("acceptCookies");
+    const declineCookies = document.getElementById("declineCookies");
+  
+    if (!localStorage.getItem("cookiesAccepted")) {
+      cookiePopup.classList.add("show");
+    }
+  
+    acceptCookies.addEventListener("click", () => {
+      localStorage.setItem("cookiesAccepted", "true");
+      cookiePopup.classList.remove("show");
+    });
+  
+    declineCookies.addEventListener("click", () => {
+      alert("Você recusou os cookies. Algumas funcionalidades podem não funcionar corretamente.");
+      cookiePopup.classList.remove("show");
+    });
   });
+  

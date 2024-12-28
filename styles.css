@@ -61,3 +61,44 @@ img{
 .comparison-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+.cookie-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+  }
+  
+  .cookie-popup.show {
+    transform: translateY(0);
+  }
+  
+  .cookie-popup button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cookie-popup button:hover {
+    background-color: #005f73;
+  }
+  
+  .cookie-popup button#declineCookies {
+    background-color: #f44336;
+  }
+  
+  .cookie-popup button#declineCookies:hover {
+    background-color: #c62828;
+  }
